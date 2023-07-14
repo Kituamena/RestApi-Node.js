@@ -1,0 +1,30 @@
+{
+  "name": "restapi-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "knex": "node --no-warnings --loader tsx ./node_modules/knex/bin/cli.js --knexfile ./knexfile.ts",
+    "lint": "eslint src --ext .ts --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
+    "@types/node": "^18.16.3",
+    "eslint": "^8.39.0",
+    "tsx": "^3.12.7",
+    "typecript": "^0.0.1-security"
+  },
+  "dependencies": {
+    "dotenv": "^16.1.4",
+    "fastify": "^4.17.0",
+    "knex": "^2.4.2",
+    "mysql": "^2.18.1",
+    "sqlite3": "^5.1.6",
+    "typescript": "^5.0.4",
+    "zod": "^3.21.4"
+  }
+}
